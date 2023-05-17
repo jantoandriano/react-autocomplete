@@ -7,7 +7,7 @@ const Searchbox = (props) => {
   const { onLoad, onPlacesChanged } = props;
   return (
     <StandaloneSearchBox onLoad={onLoad} onPlacesChanged={onPlacesChanged}>
-      <Box mb={1} mt={1} display="flex" justifyContent="center">
+      <Box mb={1} mt={2} display="flex" justifyContent="center">
         <TextField size='small' sx={{ backgroundColor: 'white', width: 400 }} label="Places" />
       </Box>    
      </StandaloneSearchBox>
