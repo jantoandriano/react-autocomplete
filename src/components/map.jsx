@@ -4,6 +4,7 @@ import MapInfo from './map-info';
 
 export const MapContainer = () => {
   const { location, info } = useSelectorSelectedPlace();
+
   return (
     <>
       <GoogleMap

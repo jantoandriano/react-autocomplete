@@ -10,8 +10,8 @@ function SearchHistory() {
   return (
     <Box display="flex" justifyContent="center" mb={2} mt={1}>
       <ButtonGroup size="small" variant="text" aria-label="text button group">
-        {recentSearch && history.map(val => (
-            <Button>{val}</Button>
+        {recentSearch && history.map((val, idx) => (
+            <Button key={val + idx}>{val}</Button>
         ))}
       </ButtonGroup>
     </Box>
